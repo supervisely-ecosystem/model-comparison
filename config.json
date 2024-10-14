@@ -1,0 +1,16 @@
+{
+  "type": "app",
+  "version": "2.0.0",
+  "name": "Compare NN Models Evaluations",
+  "description": "Compare NN models performance using generated evaluation reports",
+  "categories": ["neural network", "images", "object detection"],
+  "icon": "",
+  "icon_cover": true,
+  "headless": false,
+  "poster": "",
+  "task_location": "workspace_tasks",
+  "entrypoint": "python -m uvicorn src.main:app --host 0.0.0.0 --port 8000",
+  "port": 8000,
+  "docker_image": "supervisely/model-benchmark:1.0.13",
+  "instance_version": "6.11.19"
+}
